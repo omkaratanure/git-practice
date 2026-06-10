@@ -21,8 +21,11 @@ def handle_dailg(dialog):
 
 with sync_playwright() as p:
     browser=p.chromium.launch(headless=False, channel="chromeS")
+
     browser=p.chromium.launch(channel='msedge")
     browser=p.chromium.launch(channel="edge")
+
+
 
 
     page=browser.new_page()
